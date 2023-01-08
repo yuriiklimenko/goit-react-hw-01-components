@@ -1,0 +1,56 @@
+.profile {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 90px 60px;
+}
+
+.description {
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.avatar {
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #122236;
+  margin-bottom: 12px;
+}
+
+.tag {
+  margin-bottom: 12px;
+}
+
+.tag,
+.location,
+.stateTitle {
+  color: #768696;
+}
+
+.state {
+  font-weight: 700;
+  color: #122236;
+}
+
+.stats {
+  display: flex;
+  background-color: #f3f6f9;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+  border: 1px solid #e4e9f0;
+  padding: 20px 5px;
+}
