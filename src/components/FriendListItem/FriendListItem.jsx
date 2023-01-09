@@ -9,7 +9,7 @@ const FriendListItem = ({ friend }) => {
         className={css.avatar}
         src={friend.avatar}
         alt={friend.name}
-        width="70"
+        width="60"
       />
       <p className={css.name}>{friend.name}</p>
     </li>
