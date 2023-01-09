@@ -5,7 +5,7 @@ import { getRandomHexColor } from 'utils/RandomColor';
 const Statistics = ({ title, stats }) => {
   return (
     <section className={css.statistics}>
-      <h2 className={css.title}>{title}</h2>
+      {title.length > 0 && <h2 className={css.title}>{title}</h2>}
 
       <ul className={css.statList}>
         {stats.map(({ id, label, percentage }) => {
@@ -28,8 +28,6 @@ const Statistics = ({ title, stats }) => {
 };
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
-
   stats: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.string.isRequired,
