@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types';
 import FriendListItem from 'components/FriendListItem/FriendListItem';
+import css from './FriendList.module.css';
 
 const FriendList = ({ friends }) => {
+  console.log(css);
   return (
-    <ul>
+    <ul className={css.friendList}>
       {/* {} -- бо ми рендеремо результат масиву*/}
       {friends.map(friend => {
         return <FriendListItem friend={friend} key={friend.id} />;
